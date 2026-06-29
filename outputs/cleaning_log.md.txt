@@ -1,0 +1,45 @@
+# Cleaning Log
+
+## Issues Found
+
+- Missing Region values
+- Missing Ship Mode values
+- Missing Discount values
+- Mixed date formats
+- Inconsistent text formatting
+- Potential duplicate records
+
+## Cleaning Actions
+
+- Standardized customer names.
+- Standardized text fields.
+- Filled missing Region with "Unknown".
+- Filled missing Ship Mode with "Unknown".
+- Replaced missing Discount with 0.
+- Calculated shipping delay days.
+- Created calculated sales, profit, and profit margin.
+- Created order month and order year.
+
+## Business Rules Applied
+
+- Cancelled orders excluded from completed sales.
+- Failed payments excluded from completed sales.
+- Refunded orders summarized separately.
+- Invalid shipping records flagged.
+
+## Assumptions
+
+- Raw dataset remained unchanged.
+- Blank discounts treated as 0.
+
+## Records Removed
+
+None.
+
+## Records Flagged
+
+Records with invalid dates or business rule violations were flagged.
+
+## Limitations
+
+Some source records contained mixed date formats that required flagging instead of automatic correction.
